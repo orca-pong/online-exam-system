@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Results</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="results-page">
+    <div class="background-animation">
+        <div class="floating-orb orb1"></div>
+        <div class="floating-orb orb2"></div>
+        <div class="floating-orb orb3"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="wave"></div>
+        <div class="celebration-particle"></div>
+        <div class="celebration-particle"></div>
+        <div class="celebration-particle"></div>
+    </div>
+
+    <div class="container">
+        <div class="glass-card result-card">
+            <div class="border-animation">
+                <div class="border-top"></div>
+                <div class="border-right"></div>
+                <div class="border-bottom"></div>
+                <div class="border-left"></div>
+            </div>
+            
+            <h1>Examination Results</h1>
+            <div class="student-details">
+                <h2 id="resultStudentName"></h2>
+                <p>Roll: <span id="resultStudentRoll"></span></p>
+                <p>Timer: <span id="resultStudentTimer"></span></p>
+            </div>
+            
+            <div class="result-summary">
+                <div class="result-item">
+                    <div class="result-label">Correct</div>
+                    <div class="result-value" id="correctAnswers">0</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Incorrect</div>
+                    <div class="result-value" id="wrongAnswers">0</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Skipped</div>
+                    <div class="result-value" id="skippedQuestions">0</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Cut mark</div>
+                    <div class="result-value" id="negativeMarks">0</div>
+                </div>
+                <div class="result-item highlight">
+                    <div class="result-label">Your Mark is</div>
+                    <div class="result-value" id="finalMarks">0</div>
+                </div>
+            </div>
+            
+            <div id="secondTimerNote" class="timer-note" style="display: none;">
+                Second timer: 3 marks deducted
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn-secondary" onclick="window.location.href='index.html'">Back to Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>

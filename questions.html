@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Examination</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="questions-page">
+    <div class="background-animation">
+        <div class="floating-orb orb1"></div>
+        <div class="floating-orb orb2"></div>
+        <div class="floating-orb orb3"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Fixed Timer Header -->
+    <header class="fixed-timer glass-card">
+        <div class="header-content">
+            <div class="timer-section">
+                <span id="timer" class="timer-text">01:00</span>
+            </div>
+            <div class="student-section">
+                <span id="studentName" class="student-name"></span>
+                <span class="divider">|</span>
+                <span id="studentRoll" class="student-roll"></span>
+                <span id="timerType" class="timer-type"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="questions-container">
+            <form id="questionsForm">
+                <!-- Questions will be dynamically loaded here -->
+            </form>
+            
+            <div class="submit-container">
+                <button type="button" id="submitExam" class="btn-submit">Submit Exam</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/questions.js?v=1.0.1"></script>
+</body>
+</html>
